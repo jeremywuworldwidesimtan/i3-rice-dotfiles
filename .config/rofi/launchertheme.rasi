@@ -1,0 +1,107 @@
+/**
+ * ROFI launcher
+ * Based on NORD theme
+ **/
+configuration {
+    show-icons: true;
+}
+
+* {
+    font:   "SF Pro Display Bold 16";
+
+    /* Nord color schemes */
+    n0:     #2e3440;
+    n1:     #3b4252;
+    n2:     #434c5e;
+    n3:     #4c566a;
+
+    n4:     #d8dee9;
+    n5:     #e5e9f0;
+    n6:     #eceff4;
+
+    n7:     #8fbcbb;
+    n8:     #88c0d0;
+    n9:     #81a1c1;
+    n10:    #5e81ac;
+    n11:    #bf616a;
+
+    n12:    #d08770;
+    n13:    #ebcb8b;
+    n14:    #a3be8c;
+    n15:    #b48ead;
+
+    background-color: @n0;
+    text-color: @n6;
+}
+
+
+
+
+window {
+    location: south;
+    width: 40%;
+    y-offset: -1em;
+    padding: 1em;
+    border: 2px;
+    border-color: @n3;
+}
+
+inputbar {
+    orientation: vertical;
+    children: [prompt, searchbar];
+}
+
+prompt {
+    expand: true;
+    padding: 0px 300px 0px 0.2em;
+    background-color: @n1;
+    border-radius: 0 50% 50% 0;
+}
+
+searchbar {
+    orientation: horizontal;
+    padding: 0 0.2em 0 0.2em;
+    children: [textbox-searchtext, entry, case-indicator, num-filtered-rows, num-rows];
+
+}
+
+textbox-searchtext {
+    expand: false;
+    content: "Search | ";
+}
+
+num-filtered-rows  {
+    background-color: @n7;
+    text-color: @n1;
+    padding: 0 0.2em;
+}
+
+num-rows  {
+    background-color: @n9;
+    text-color: @n1;
+    padding: 0 0.2em;
+}
+
+entry {
+    placeholder         : "Enter keyword to search";
+    placeholder-color   : @n2;
+}
+
+listview {
+    border: 1px 0 0 0;
+    border-color: @n6;
+    padding: 5px 0 0 0;
+    lines: 6;
+    spacing: 5px;
+}
+
+element {
+    padding: 0 0.2em;
+}
+
+element selected {
+    background-color: @n6;
+    text-color: @n0;
+}
+
+/* vim:ft=css

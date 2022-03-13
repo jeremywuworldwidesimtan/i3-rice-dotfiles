@@ -1,0 +1,54 @@
+! Colorscheme configuration
+! Based on NORD
+! special
+*.foreground:   #D8DEE9
+*.background:   #2E3440
+*.cursorColor:  #D8DEE9
+*fading: 35
+*fadeColor: #4C566A
+
+! "black"
+*.color0:       #3B4252
+*.color8:       #4C566A
+
+! "red"
+*.color1:       #BF616A
+*.color9:       #BF616A
+
+! "green"
+*.color2:       #A3BE8C
+*.color10:      #A3BE8C
+
+! "yellow"
+*.color3:       #EBCB8B
+*.color11:      #EBCB8B
+
+! "blue"
+*.color4:       #81A1C1
+*.color12:      #81A1C1
+
+! "magenta"
+*.color5:       #B48EAD
+*.color13:      #B48EAD
+
+! "cyan"
+*.color6:       #88C0D0
+*.color14:      #8FBCBB
+
+! "white"
+*.color7:       #E5E9F0
+*.color15:      #ECEFF4
+
+
+! Font configuration
+URxvt.font: xft:Source Code Pro:style=Regular:size=12
+URxvt.boldFont: xft:Source Code Pro:style=Bold:size=12
+URxvt.italicFont: xft:Source Code Pro:style=Italic:size=12
+URxvt.boldItalicFont: xft:Source Code Pro:style=Bold Italic:size=12
+
+! URxvt configs
+URxvt.cursorBlink: true
+URxvt.perl-ext-commoni: default, tabbed
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.title: Terminal
